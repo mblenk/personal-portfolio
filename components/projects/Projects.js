@@ -55,7 +55,7 @@ export default function Projects({ setActiveSlide }) {
           <span className="-translate-x-120 opacity-0" ref={s}>s</span>
         </h1>} */}
         <br />
-        <h3 className="text-xl">Here are some examples of recent projects I've created using different tech stacks. The code for all of these apps is available on GitHub if you wish to view the source code behind them.</h3>
+        <h3 className="text-xl">Here are some examples of recent projects I&apos;ve created using different tech stacks. The code for all of these apps is available on GitHub if you wish to view the source code behind them.</h3>
         <br />
         <h4 className="text-xl text-center">Click the images below to learn more...</h4>
         <h1 className="text-green-700 text-3xl underline mt-10 flex font-bold">Main Projects</h1>

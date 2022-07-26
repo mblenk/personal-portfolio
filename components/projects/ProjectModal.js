@@ -33,10 +33,10 @@ export default function ProjectModal({ number, setActiveSlide, data }) {
                   <h4 className=' text-2xl underline font-semibold'>Stack used:</h4>
                   <ul className='text-center text-lg lg:text-xl'>
                     { data[index].stack.map(item => (
-                      <li className='mt-2'>{item}</li>
+                      <li className='mt-2' key={item}>{item}</li>
                     ))}
                   </ul>
-                  <a href={data[index].githubLink} target="_blank" className='flex items-center gap-2 bg-black rounded-full p-3 w-fit hover:border-2 hover:border-white mx-auto mt-4'>
+                  <a href={data[index].githubLink} target="_blank" rel="noreferrer" className='flex items-center gap-2 bg-black rounded-full p-3 w-fit hover:border-2 hover:border-white mx-auto mt-4'>
                     <img src="/GitHub-Mark-Light-64px.png" alt="GitHub Logo" width="30" height="10"/>
                     <span className='font-4xl font-bold'>GitHub</span>
                   </a>

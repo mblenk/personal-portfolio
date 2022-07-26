@@ -18,7 +18,7 @@ export default function About( { setEndOfParallax }) {
     <div className="bg-black py-24 relative m-0 overflow-y-hidden" id="about" >
         <div className="w-3/4 mx-auto lg:flex relative sm:gap-12 lg:gap-8" >
             <div className="m-0 lg:w-1/2">
-              <h1 className="text-green-700 text-3xl md:text-6xl font-bold mt-4" ref={myRef}>Hi, I'm Matt  👋</h1>
+              <h1 className="text-green-700 text-3xl md:text-6xl font-bold mt-4" ref={myRef}>Hi, I&apos;m Matt  👋</h1>
               <br />
               <p className="text-white md:text-xl">I am a self-taught javascript developer able to create Full-Stack web applications.</p>
               <br />
