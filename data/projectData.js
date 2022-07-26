@@ -8,7 +8,7 @@ export const projectData = [{
     challenges: "This was my first attempt using CSS on a full website and using a hero image with a ::before was an ambitious challenge which took a lot of trial and error with scaling and maintining position of both elements on scrolling. The Javascript functionality took a lot of work to create various functions to process the form data and my first attempt was a bit messy with different scripts importing data from various sources. Eventually I managed to make it more modular with one script per form that actually output data to the page with other scripts just exporting functions that this main script could use to process the data.",
     learned: "Creating and styling a webpage as well as accessing and working with the DOM to add Javascript functionality.",
     githubLink: "https://github.com/mblenk/golf-handicap-calculator",
-    videoLink:"/golf-hcap-calc.mov",
+    videoLink:"https://youtu.be/Yc_YanZIl4U",
     imageLink:"/golf-hcap-calc.png"
 },
 {
