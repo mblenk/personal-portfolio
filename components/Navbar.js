@@ -9,7 +9,6 @@ export default function Navbar({ activeSlide }) {
   const handleClick = () => {
     menuActive ? setMenuActive(false) : setMenuActive(true)
   }
-  console.log(menuActive)
 
   return (  
     <>

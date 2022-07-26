@@ -25,24 +25,28 @@ export default function Parallax({ contentVisible, endOfParallax }) {
             <img 
               src="/clouds.png" 
               className={endOfParallax ? "hide-clouds" : "clouds"}
+              alt="clouds image"
             />
             <img 
               src="/sun.png" 
               className="sun"
+              alt="sun-image"
             />
             <img 
               src="/mountain_scene.png" 
               // className={contentVisible ? "hide-mountains" : "mountains"}
               className='mountains'
+              alt="mountains image"
             />
             <img 
               src="/forest_path.png" 
               // className={contentVisible ? "hide-forest" : "forest"}
               className='forest'
+              alt="forest image"
             />
-            <h1 className="drop-shadow-2xl font-bold text-green-700 text-7xl absolute mb-96 font-sans" ref={myRef}>Welcome</h1>
-            <h4 className="drop-shadow-2xl font-bold text-green-700 text-3xl absolute mb-56">Scroll down to learn more about me...</h4>
-            <img src="/down_icon.png" alt="" className="h-18 w-18 animate-bounce mb-24" />
+            <h1 className="drop-shadow-2xl font-bold text-green-700 text-6xl lg:text-7xl absolute mb-96 text-center" ref={myRef}>Welcome</h1>
+            <h4 className="drop-shadow-2xl font-bold text-green-700 text-2xl lg:text-3xl absolute mb-56 text-center">Scroll down to learn more about me...</h4>
+            <img src="/down_icon.png" alt="Down icon" className="h-18 w-18 animate-bounce mb-20" />
             <div className="bg-black fixed top-0 left-0 h-full w-full flex justify-center items-center" ref={intro}>
               <div className="text-green-700 p-10">
                 <h1 className="bg-black overflow-hidden text-center">
