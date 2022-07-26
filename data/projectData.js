@@ -21,7 +21,7 @@ export const projectData = [{
     challenges: "Developing the parallax effect was very difficult as there were 5 layers to align in both 2D and 3D. I had decided that when transitioning from the parallax to the site content I didn't just want to match the site content scroll speed to the slowest parallax layer. Although this would have made for a much smoother transition, the scroll speed of the content would've been very slow and I wanted the page to be slick once into the main content. This was tricky to achieve but through learning more about transitions and Intersection Observers I could achieve the desired effect. This was also my first time trialling GSAP for animations and effects so I had to experiment with different options to get the stlying right.",
     learned: "How to adapt to NextJS from React along with a much greater understanding of CSS and styling/animation.",
     githubLink: "#",
-    videoLink:"/portfolio-parallax.mov",
+    videoLink:"https://youtu.be/LNiWRHehrNs",
     imageLink: "/portfolio-page.png"
 },
 {
@@ -34,7 +34,7 @@ export const projectData = [{
     challenges: "Working with Firebase is very intuitive but it showed me the importance of defining how I want to store data as I had to change the structure of my data a number of times before settling on the final solution. Thankfully the MongoDB model makes this much simpler in MERN but I was much more focussed on correctly setting up that model when I moved onto using Mongo. Implementing a date filter when displaying the user's historical data was difficult but I managed to achieve this by separating the data rendering into a separate component. This meant that the filter options were a level higher than the rendering and I could pass filtered data into the rendering component dependent on which filter options had been selected.",
     learned: "How to work with Firebase but more importantly how to develop a full-stack application rather than just a front-end with static data.",
     githubLink: "https://github.com/mblenk/toil-tracker",
-    videoLink:"/toil-tracker.mov",
+    videoLink:"https://youtu.be/B__7JjfMpk8",
     imageLink: "/toil-tracker.png"
 },
 {
@@ -47,7 +47,7 @@ export const projectData = [{
     challenges: "Setting up the JWT Auth was a complicated process for my first time as I wanted to protect my routes with the JWT Token rather than just using the React Context API with a user object to move between pages. Using middleware to protect routes as well as checking whether there was a valid token each time the page refreshed solved the problem, giving the page full JWT Auth functionality. Having thought that I would be able to take the code from my earlier project to calculate the handicap I quickly discovered that it needed a lot of changes to work with ever-changing data coming from a database rather than a single static dataset from a <form> element. The most difficult issue I found was when a user entered a score with an out of sequence date (i.e. they already had more recent rounds in the system). In this scenario I needed to update their handicap history to reflect the change as it was at the time and discount any later rounds in the calculation. To do this, I had to split the dataset that came from the database into rounds earlier and rounds later than the submitted date. I then had to update the handicap changes for the new round and then again for every round with a more recent date so that it was a true reflection of the user's handicap index history.",
     learned: "How to work with the MERN stack and JWT Auth.",
     githubLink: "https://github.com/mblenk/golf-handicap-store",
-    videoLink:"/golf-hcap-store.mov",
+    videoLink:"https://youtu.be/BalHbmQYI5w",
     imageLink:"/golf-stats.png"
 },
 {
@@ -60,7 +60,7 @@ export const projectData = [{
     challenges: "Checking a sudoku solution involves checking 9 rows, 9 columns and 9 cells, all made up of 9 numbers. This means a huge number of possibilities to check. I also wanted to include a timer function that would stop as soon as the last digit was entered rather than a submit button which meant keeping track of each cell as it was entered. This caused issues when it came to using the undo and clear buttons as I had to adjust that count accordingly. Tracking the time elapsed also raised some challenges in recording the final time elapsed at the end of the puzzle as well as being able to pause and unpause the game without the timer continuing.",
     learned: "This was a real test of being able to work with arrays and work through the data they contain. This was also my first time working with the Date object which was a valuable learning experience.",
     githubLink: "https://github.com/mblenk/sudoku-puzzle-game",
-    videoLink:"/sudoku-game.mov",
+    videoLink:"https://youtu.be/2KC9GHn3Qds",
     imageLink:"/sudoku-app.png"
 },
 {
@@ -73,7 +73,7 @@ export const projectData = [{
     challenges: "Differentiating between the different types of buttons was tricky as I needed to add Event Listeners according to whether the button was a number or symbol. I then needed the screen to reflect what was being input and update each time a stage of the calculation was input. I managed this by separating the button types into arrays with querySelectorAll to assign the Event Listeners and then keeping track of what the previous button to be pressed was. That allowed me to check whether another number/digit was being entered or a symbol meaning the next stage of the calculation was in progress.",
     learned: "Interacting with multiple DOM elements and receiving the values from these to a Javascript function in order to calculate a value.",
     githubLink: "https://github.com/mblenk/calculator-app",
-    videoLink:"/calculator.mov",
+    videoLink:"https://youtu.be/G97Dqs3yP0A",
     imageLink:"/calculator.png"
 },
 {
@@ -86,6 +86,6 @@ export const projectData = [{
     challenges: "In hindsight, React was probably not the best way to create a clone of this game as it involved a lot of state passing between components. Vanilla JS would probably be much simpler to use for this but it was a valuable learning experience to use react for this sort of functionality. It took me a lot of trial and error to understand implementing custom classes depending on whether the letters were correct but in the wrong place or correct and in the right place but I was able to solve this with conditional classes based on an array containing that cell's reference.",
     learned: "Using React and creating state within components before passing this as props to other components.",
     githubLink: "https://github.com/mblenk/wordle-clone",
-    videoLink:"/wordle-clone.mov",
+    videoLink:"https://youtu.be/siZ-paJ-DDc",
     imageLink:"/wordle-clone.png"
 }]
