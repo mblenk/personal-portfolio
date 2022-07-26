@@ -12,7 +12,7 @@ export default function Biography() {
                 <button className='bg-white text-green-700 p-2 rounded-xl text-center cursor-pointer drop-shadow-lg border-green-700 border-4 transition ease-in hover:bg-green-700 hover:text-white duration-100 font-semibold' onClick={() => setLongText(true)}>Long version</button>
             </div>
         </div>
-        <div className="h-1/2 lg:max-h-[18rem] z-10 p-2 lg:overflow-auto lg:transition ease-in hover:scale-200 hover:text-sm hover:-translate-x-48 hover:-translate-y-20 hover:border-8 hover:border-green-700 hover:bg-black hover:p-4 hover:rounded-lg duration-150"> 
+        <div className="h-1/2 lg:max-h-[18rem] z-10 p-2 lg:overflow-auto lg:transition lg:ease-in lg:hover:scale-200 lg:hover:text-sm lg:hover:-translate-x-48 lg:hover:-translate-y-20 lg:hover:border-8 lg:hover:border-green-700 lg:hover:bg-black lg:hover:p-4 lg:hover:rounded-lg lg:duration-150"> 
             <div className="">
                 { !longText && <p className="animate-fadein">So you want the short story? Well I was first introduced to coding at the end of 2021 and was immediately hooked. I made the decision to quit my job as a Global Buyer and teach myself to code. I started with the basics of HTML, CSS and Javascript and then began experimenting with different projects, experiencing equal amounts of satisfation and frustration along the way! <br /><br/>In my spare time I like to keep active and am keen on rock climbing, running, squash and golf. I&apos;m based in Nottingham in the UK which is very convenient for long walks in the Peak District.</p>}
 
