@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .perspective {
+      perspective: 10px;
+    }
+  
+    .preserve-3d {
+      transform-style: preserve-3d;
+    }
+  
+    .sky-showing {
+        position: absolute;
+        height: 125%;
+        width: 100%;
+        z-index: -1;
+        transform: translateZ(-50px) scale(10);
+        background: linear-gradient(lightblue, rgb(93, 93, 255) 70%, black 85%)
+    }
+    .sky-scrolled {
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        z-index: -1;
+        transform: translateZ(-50px) scale(10);
+        background: black
+    }
+    .clouds {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        transform: translateZ(-50px) scale(10)
+    }
+    .hide-clouds {
+        display:none
+    }
+    .sun {
+        position: absolute;
+        top: -20%;
+        left: 0%;
+        /* height: 60%;
+        width: 60%; */
+        object-fit: cover;
+        z-index: -1;
+        transform: translateZ(-50px) scale(6)
+    }
+    .mountains {
+        transform: translateZ(-45px) scale(9);
+        position: absolute;
+        bottom: -50%;
+        height: 70%;
+        width: 70%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .forest {
+        position: absolute;
+        bottom: -250%;
+        object-fit:cover;
+        height: 90%;
+        width: 100%;
+        z-index: -1;
+        transform: translateZ(-20px) scale(4)
+    }
+    .hide-forest {
+      display:none;
+    }
+    .speed-1 {
+        transform: translateZ(-20px) scale(4)
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+  ::-webkit-scrollbar {
+    width: 0.5rem
+  }
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(21 128 61);
+    border-radius: 20px;
+  }
+
+  @media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 0rem
+      }
+  }
+  
+
+  
+ 
