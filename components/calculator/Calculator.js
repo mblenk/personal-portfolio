@@ -202,7 +202,7 @@ const handleClear = () => {
         <div className="output-screen">
             <span className="output">{output}</span>
         </div>
-        <div class="calcbuttons">
+        <div className="calcbuttons">
             { hideClear && <button className={`key clear-all`} onClick={handleAllClear}>AC</button>}
             { !hideClear && <button className={`key clear`} onClick={handleClear}>C</button>}
             <button className="key modifier" value="%" onClick={handleModifier}>%</button>
