@@ -7,7 +7,7 @@ export default function Slider({ setActiveSlide, data }) {
     <div className="mt-12 relative">
         <Carousel 
             cols={1} rows={1} gap={10} showDots={true} 
-            dotColorActive={'rgb(21 128 61)'} loop 
+            dotColorActive={'rgb(34 197 94)'} loop 
             containerStyle={{
                 padding: '20px 10px 10px 10px',
                 borderRadius: '10px'

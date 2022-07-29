@@ -19,6 +19,18 @@ export default function Home() {
       <Head>
         <title>Matt Blenkinsop - Developer Portfolio</title>
         <meta name="description" content="I am a self-taught javascript developer skilled in creating full-stack web applications." />
+
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&apos;display=swap" rel="stylesheet"></link>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&apos;display=swap" rel="stylesheet"></link>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&apos;display=swap" rel="stylesheet"></link> */}
       </Head>
       <main className="relative bg-black text-white tracking-wide">
         <Navbar activeSlide={activeSlide} />

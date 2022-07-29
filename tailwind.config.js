@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -10,10 +12,11 @@ module.exports = {
         '200': '2.00'
       },
       fontFamily: {
-        'raleway': 'Raleway',
-        'roboto': 'Roboto',
-        'cormorant': '"Cormorant SC"',
-        'lato': ['Lato']
+        // lato: ['Lato', ...defaultTheme.fontFamily.sans],
+        // raleway: ['Raleway, sans-serif;'],
+        // roboto: ['Roboto, sans-serif;'],
+        // 'cormorant': '"Cormorant SC"',
+        // lato: ['Lato, sans-serif;']
       },
       spacing: {
         '120': '30rem',

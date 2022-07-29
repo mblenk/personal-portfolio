@@ -33,22 +33,22 @@ export default function ContactForm() {
 
   return (
     <form className='flex flex-col lg:w-2/3 pb-10' ref={formRef} onSubmit={handleSubmit}>
-        <h2 className='text-3xl text-green-700 font-semibold underline'>How to get in touch:</h2>
+        <h2 className='text-3xl text-white font-semibold underline'>How to get in touch:</h2>
         <h4 className='mt-4 text-xl'>You can email me directly at:</h4>
         <h4 className='mt-4 text-xl'>mgblenkinsop@outlook.com</h4>
         <h3 className='my-4 text-xl'>Alternatively please get in touch using the form below</h3>
         <h3 className='text-xl'>Email:</h3>
-        <input className="text-black p-2 w-full rounded-lg my-2 border-4 outline-0 border-green-700" required type="email" name="reply_to" value={email} onChange={(e) => setEmail(e.target.value)}/>
+        <input className="text-white bg-black p-2 w-full rounded-lg my-2 border-4 outline-0 border-green-500" required type="email" name="reply_to" value={email} onChange={(e) => setEmail(e.target.value)}/>
         <h3 className='text-xl'>Name:</h3>
-        <input className="text-black p-2 w-full rounded-lg my-2 border-4 outline-0 border-green-700" required type="text" name="from_name" value={name} onChange={(e) => setName(e.target.value)}/>
+        <input className="text-white bg-black p-2 w-full rounded-lg my-2 border-4 outline-0 border-green-500" required type="text" name="from_name" value={name} onChange={(e) => setName(e.target.value)}/>
         <h3 className='text-xl'>Message:</h3>
-        <textarea className="text-black p-2 w-full rounded-lg my-2 border-4 outline-0 border-green-700" required type="text" name="message" rows="5" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-        { !isPending && !sent && <button className="mt-2 font-semibold text-green-700 bg-white p-2 rounded-xl text-center cursor-pointer drop-shadow-lg border-green-700 border-4 transition ease-in hover:bg-green-700 hover:text-white duration-100 w-2/6 max-h-12" type="submit">Send</button>}
-        { isPending && <button className="mt-2 font-semibold text-green-700 bg-white p-2 rounded-xl text-center cursor-pointer drop-shadow-lg border-green-700 border-4 transition ease-in hover:bg-green-700 hover:text-white duration-100 w-2/6 flex items-center gap-4 max-h-12" type="submit" disabled>
+        <textarea className="text-white bg-black p-2 w-full rounded-lg my-2 border-4 outline-0 border-green-500" required type="text" name="message" rows="5" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+        { !isPending && !sent && <button className="mt-2 font-semibold text-white bg-green-500 p-2 rounded-xl text-center cursor-pointer drop-shadow-lg transition ease-in hover:bg-white hover:text-green-500 duration-100 w-2/6 max-h-12" type="submit">Send</button>}
+        { isPending && <button className="mt-2 flex gap-2 justify-center items-center font-semibold text-white bg-green-500 p-2 rounded-xl text-center cursor-pointer drop-shadow-lg transition ease-in hover:bg-white hover:text-green-500 duration-100 w-2/6 max-h-12" type="submit" disabled>
             <img src="/loading.png" alt="loading icon" className='h-full animate-spin'/>
             <span>Sending...</span>
         </button>}
-        { sent && <button className="mt-2 font-semibold text-green-700 bg-white p-2 rounded-xl text-center cursor-pointer drop-shadow-lg border-green-700 border-4 transition ease-in hover:bg-green-700 hover:text-white duration-100 w-2/6 flex items-center gap-4 max-h-12" type="submit" disabled>
+        { sent && <button className="mt-2 flex gap-2 justify-center items-center font-semibold text-white bg-green-500 p-2 rounded-xl text-center cursor-pointer drop-shadow-lg transition ease-in hover:bg-white hover:text-green-500 duration-100 w-2/6 max-h-12" type="submit" disabled>
             <img src="/sent.png" alt="loading icon" className='h-full animate-pulse'/>
             <span>Sent!</span>
         </button>}

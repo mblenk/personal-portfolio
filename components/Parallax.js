@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react'
 import { gsap } from "gsap";
 
-export default function Parallax({ contentVisible, endOfParallax }) {
+export default function Parallax({ endOfParallax }) {
     const myRef = useRef()
     const text1 = useRef()
     const text2 = useRef()
@@ -48,7 +48,7 @@ export default function Parallax({ contentVisible, endOfParallax }) {
             <h4 className="drop-shadow-2xl font-bold text-green-700 text-2xl lg:text-3xl absolute mb-56 text-center">Scroll down to learn more about me...</h4>
             <img src="/down_icon.png" alt="Down icon" className="h-18 w-18 animate-bounce mb-20" />
             <div className="bg-black fixed top-0 left-0 h-full w-full flex justify-center items-center" ref={intro}>
-              <div className="text-green-700 p-10">
+              <div className="text-green-500 p-10">
                 <h1 className="bg-black overflow-hidden text-center">
                   <span className="text translate-y-full inline-block text-7xl" ref={text1}>Matt Blenkinsop</span>
                 </h1>
@@ -57,11 +57,11 @@ export default function Parallax({ contentVisible, endOfParallax }) {
                 </h1>
               </div>
             </div>
-            <div className="bg-green-700 fixed top-0 left-0 w-full h-full translate-y-full" ref={slider}></div>
+            <div className="bg-green-500 fixed top-0 left-0 w-full h-full translate-y-full" ref={slider}></div>
         </header>
         <div className="speed-1 h-full -z-10"></div>  
         <div className="speed-1 h-full -z-10"></div>  
-        <div className={`speed-1 h-full -z-10 ${endOfParallax ? "transition ease-in bg-black duration-700" : "transition ease-in bg-transparent duration-700"} `}></div> 
+        <div className={`speed-1 h-full -z-10 ${endOfParallax ? "transition ease-in bg-black duration-500" : "transition ease-in bg-transparent duration-500"} `}></div> 
     </>
   )
 }
