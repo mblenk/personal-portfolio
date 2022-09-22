@@ -9,23 +9,11 @@ export const projectData = [{
     learned: "Creating and styling a webpage as well as accessing and working with the DOM to add Javascript functionality.",
     githubLink: "https://github.com/mblenk/golf-handicap-calculator",
     videoLink:"https://youtu.be/Yc_YanZIl4U",
-    imageLink:"/golf-hcap-calc.png"
+    imageLink:"/golf-hcap-calc.png",
+    url: "https://golf-handicap-calculator.vercel.app"
 },
 {
     index: 2,
-    project: "full",
-    title:"Portfolio Page",
-    stack: ["HTML", "CSS", "Javascript", "NextJS", "Tailwind", "GSAP"],
-    useage:"This is my personal website to showcase myself as a developer.",
-    desc: "This was the first time I had used NextJS having previously focussed on React for other projects. It was also the first project that I really concentrated on styling with more animated content and the parallax scrolling effect on the landing screen. As a result my skill with CSS vastly improved and allowed me to go back to my earlier projects and make substantial improvements.",
-    challenges: "Developing the parallax effect was very difficult as there were 5 layers to align in both 2D and 3D. I had decided that when transitioning from the parallax to the site content I didn't just want to match the site content scroll speed to the slowest parallax layer. Although this would have made for a much smoother transition, the scroll speed of the content would've been very slow and I wanted the page to be slick once into the main content. This was tricky to achieve but through learning more about transitions and Intersection Observers I could achieve the desired effect. This was also my first time trialling GSAP for animations and effects so I had to experiment with different options to get the stlying right.",
-    learned: "How to adapt to NextJS from React along with a much greater understanding of CSS and styling/animation.",
-    githubLink: "#",
-    videoLink:"https://youtu.be/LNiWRHehrNs",
-    imageLink: "/portfolio-page.png"
-},
-{
-    index: 3,
     project: "full",
     title:"Overtime Tracker",
     stack: ["HTML", "CSS", "Javascript", "React", "Firebase"],
@@ -38,7 +26,7 @@ export const projectData = [{
     imageLink: "/toil-tracker.png"
 },
 {
-    index: 4,
+    index: 3,
     project: "full",
     title:"Golf Handicap Tracker",
     stack: ["HTML", "CSS", "Javascript", "React", "NodeJS", "Express", "MongoDB", "JWT Auth"],
@@ -51,6 +39,19 @@ export const projectData = [{
     imageLink:"/golf-stats.png"
 },
 {
+    index: 4,
+    project: "full",
+    title:"Portfolio Page",
+    stack: ["HTML", "CSS", "Javascript", "NextJS", "Tailwind"],
+    useage:"This is my personal website to showcase myself as a developer.",
+    desc: "This was the first time I had used NextJS having previously focussed on React for other projects. It was also the first project that I really concentrated on styling with more animated content and the parallax scrolling effect on the landing screen. As a result my skill with CSS vastly improved and allowed me to go back to my earlier projects and make substantial improvements.",
+    challenges: "Developing the parallax effect was very difficult as there were 5 layers to align in both 2D and 3D. I had decided that when transitioning from the parallax to the site content I didn't just want to match the site content scroll speed to the slowest parallax layer. Although this would have made for a much smoother transition, the scroll speed of the content would've been very slow and I wanted the page to be slick once into the main content. This was tricky to achieve but through learning more about transitions and Intersection Observers I could achieve the desired effect. This was also my first time trialling GSAP for animations and effects so I had to experiment with different options to get the stlying right.",
+    learned: "How to adapt to NextJS from React along with a much greater understanding of CSS and styling/animation.",
+    githubLink: "#",
+    videoLink:"https://youtu.be/LNiWRHehrNs",
+    imageLink: "/portfolio-page.png"
+},
+{
     index: 5,
     project: "mini",
     title:"Sudoku Game",
@@ -61,7 +62,8 @@ export const projectData = [{
     learned: "This was a real test of being able to work with arrays and work through the data they contain. This was also my first time working with the Date object which was a valuable learning experience.",
     githubLink: "https://github.com/mblenk/sudoku-puzzle-game",
     videoLink:"https://youtu.be/2KC9GHn3Qds",
-    imageLink:"/sudoku-app.png"
+    imageLink:"/sudoku-app.png",
+    url:"https://sudoku-puzzle-game.vercel.app"
 },
 {
     index: 6,
@@ -74,13 +76,14 @@ export const projectData = [{
     learned: "Interacting with multiple DOM elements and receiving the values from these to a Javascript function in order to calculate a value.",
     githubLink: "https://github.com/mblenk/calculator-app",
     videoLink:"https://youtu.be/G97Dqs3yP0A",
-    imageLink:"/calculator.png"
+    imageLink:"/calculator.png",
+    url:"https://calculator-app-eight-gamma.vercel.app"
 },
 {
     index: 7,
     project: "mini",
     title:"Wordle",
-    stack: ["HTML", "CSS", "Javascript, React"],
+    stack: ["HTML", "CSS", "Javascript", "React"],
     useage:"This is a clone of the Wordle game.",
     desc: "This was a project to learn about using React and understanding Components and State.",
     challenges: "In hindsight, React was probably not the best way to create a clone of this game as it involved a lot of state passing between components. Vanilla JS would probably be much simpler to use for this but it was a valuable learning experience to use react for this sort of functionality. It took me a lot of trial and error to understand implementing custom classes depending on whether the letters were correct but in the wrong place or correct and in the right place but I was able to solve this with conditional classes based on an array containing that cell's reference.",
@@ -88,4 +91,18 @@ export const projectData = [{
     githubLink: "https://github.com/mblenk/wordle-clone",
     videoLink:"https://youtu.be/siZ-paJ-DDc",
     imageLink:"/wordle-clone.png"
+},
+{
+    index: 8,
+    project: "full",
+    title:"Fantasy Football Statistics",
+    stack: ["HTML", "CSS", "Javascript", "React", "NodeJS", "Express", "MongoDB", "JWT Auth", "Tailwind"],
+    useage:"A web application for calculating and displaying statistics for a Fantasy Football Draft League",
+    desc: "",
+    challenges: "",
+    learned: "",
+    githubLink: "https://github.com/mblenk/fantasy-football-app",
+    videoLink:"",
+    imageLink:"",
+    url: ""
 }]

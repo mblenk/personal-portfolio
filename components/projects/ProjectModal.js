@@ -17,6 +17,7 @@ export default function ProjectModal({ number, setActiveSlide, data }) {
             <div className="bg-black lg:my-12 mx-auto p-4 w-11/12 h-full lg:w-3/4 lg:h-3/4 rounded-xl relative lg:flex lg:gap-4 overflow-y-auto overflow-x-hidden border-green-500 border-8">
                 <div className="lg:w-3/5 flex flex-col gap-2 p-1">
                   <h2 className='text-2xl lg:text-4xl underline font-bold mb-4'>{data[index].title}</h2>
+                  { data[index].url && <a href={data[index].url} target="_blank" rel="noreferrer" className="border-2 border-green-500 bg-green-500 p-2 rounded-full text-center hover:border-2 hover:border-white">Click here to view a live version hosted with Vercel</a>}
                   <h3 className=''>{data[index].useage}</h3>
                   <h4 className='text-lg lg:text-xl underline font-semibold'>Skills learned</h4>
                   <p className=''>{data[index].learned}</p>

@@ -105,7 +105,6 @@ const handleSymbol = (e) => {
   const previousButtonCheck = previousButton.classList.contains('symbol')
 
   if(!previousButtonCheck) {
-      console.log(screenDisplay)
       const wholeNumber = parseFloat(screenDisplay)
       console.log(wholeNumber)
       // wholeNumbersInput.unshift(wholeNumber)
