@@ -10,7 +10,7 @@ export default function Navbar({ activeSlide }) {
       { !activeSlide && 
         <nav className="fixed w-full h-16 md:h-12 px-12">
           <Link>
-            About
+            
           </Link>
         </nav> }
     </> 
