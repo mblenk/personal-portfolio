@@ -31,7 +31,7 @@ export default function Home() {
         <title>Matt Blenkinsop - Developer Portfolio</title>
         <meta name="description" content="I am a self-taught javascript developer skilled in creating full-stack web applications." />
       </Head>
-      <main className="relative bg-background text-secondary tracking-wide font-['Raleway']">
+      <main className="relative bg-background text-secondary tracking-wide">
         <div className="h-screen w-screen overflow-y-auto overflow-x-hidden scroll-smooth">
           <Navbar activeSlide={activeSlide} />
           <About /> 
