@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+// const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
@@ -9,15 +9,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#0A9C00',
-        'secondary': '#0010E9',
-        'tertiary': '#FFFF03' 
+        'secondary': 'rgb(255, 255, 255)',
+        'tertiary': '#FFFF03',
+        'neon': '#59FF5A', 
+        'background': '#374151'
       },
       scale: {
         '200': '2.00'
       },
       fontFamily: {
-        // lato: ['Lato', ...defaultTheme.fontFamily.sans],
+        // lato: ['"Lato"', ...defaultTheme.fontFamily.sans],
         // raleway: ['Raleway, sans-serif;'],
         // roboto: ['Roboto, sans-serif;'],
         // 'cormorant': '"Cormorant SC"',

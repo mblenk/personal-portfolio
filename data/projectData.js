@@ -1,5 +1,5 @@
 export const projectData = [{
-    index: 1,
+    index: 4,
     project: "full",
     title:"Golf Handicap Calculator",
     stack: ["HTML", "CSS", "Javascript"],
@@ -10,10 +10,11 @@ export const projectData = [{
     githubLink: "https://github.com/mblenk/golf-handicap-calculator",
     videoLink:"https://youtu.be/Yc_YanZIl4U",
     imageLink:"/golf-hcap-calc.png",
-    url: "https://golf-handicap-calculator.vercel.app"
+    url: "https://golf-handicap-calculator.vercel.app",
+    host: "Vercel"
 },
 {
-    index: 2,
+    index: 3,
     project: "full",
     title:"Overtime Tracker",
     stack: ["HTML", "CSS", "Javascript", "React", "Firebase"],
@@ -23,10 +24,12 @@ export const projectData = [{
     learned: "How to work with Firebase but more importantly how to develop a full-stack application rather than just a front-end with static data.",
     githubLink: "https://github.com/mblenk/toil-tracker",
     videoLink:"https://youtu.be/B__7JjfMpk8",
-    imageLink: "/toil-tracker.png"
+    imageLink: "/toiltracker.png",
+    url: "https://toil-tracker.web.app/",
+    host: "Firebase"
 },
 {
-    index: 3,
+    index: 2,
     project: "full",
     title:"Golf Handicap Tracker",
     stack: ["HTML", "CSS", "Javascript", "React", "NodeJS", "Express", "MongoDB", "JWT Auth"],
@@ -36,23 +39,27 @@ export const projectData = [{
     learned: "How to work with the MERN stack and JWT Auth.",
     githubLink: "https://github.com/mblenk/golf-handicap-store",
     videoLink:"https://youtu.be/BalHbmQYI5w",
-    imageLink:"/golf-stats.png"
+    imageLink:"/golf-hcap-store.png",
+    url: null,
+    host: "Not currently hosted"
 },
 {
-    index: 4,
+    index: 5,
     project: "full",
     title:"Portfolio Page",
     stack: ["HTML", "CSS", "Javascript", "NextJS", "Tailwind"],
     useage:"This is my personal website to showcase myself as a developer.",
-    desc: "This was the first time I had used NextJS having previously focussed on React for other projects. It was also the first project that I really concentrated on styling with more animated content and the parallax scrolling effect on the landing screen. As a result my skill with CSS vastly improved and allowed me to go back to my earlier projects and make substantial improvements.",
-    challenges: "Developing the parallax effect was very difficult as there were 5 layers to align in both 2D and 3D. I had decided that when transitioning from the parallax to the site content I didn't just want to match the site content scroll speed to the slowest parallax layer. Although this would have made for a much smoother transition, the scroll speed of the content would've been very slow and I wanted the page to be slick once into the main content. This was tricky to achieve but through learning more about transitions and Intersection Observers I could achieve the desired effect. This was also my first time trialling GSAP for animations and effects so I had to experiment with different options to get the stlying right.",
+    desc: "This was the first time I had used NextJS having previously focussed on React for other projects. It was also the first project that I really concentrated on styling with more animated content. As a result my skill with CSS vastly improved and allowed me to go back to my earlier projects and make substantial improvements.",
+    challenges: " This was also my first time trialling GSAP for animations and effects so I had to experiment with different options to get the stlying right.",
     learned: "How to adapt to NextJS from React along with a much greater understanding of CSS and styling/animation.",
     githubLink: "#",
-    videoLink:"https://youtu.be/LNiWRHehrNs",
-    imageLink: "/portfolio-page.png"
+    videoLink:null,
+    imageLink: "/portfolio.png",
+    url: "/",
+    host: "Vercel"
 },
 {
-    index: 5,
+    index: 15,
     project: "mini",
     title:"Sudoku Game",
     stack: ["HTML", "CSS", "Javascript"],
@@ -62,47 +69,65 @@ export const projectData = [{
     learned: "This was a real test of being able to work with arrays and work through the data they contain. This was also my first time working with the Date object which was a valuable learning experience.",
     githubLink: "https://github.com/mblenk/sudoku-puzzle-game",
     videoLink:"https://youtu.be/2KC9GHn3Qds",
-    imageLink:"/sudoku-app.png",
-    url:"https://sudoku-puzzle-game.vercel.app"
+    imageLink:"/sudoku.png",
+    url:"https://sudoku-puzzle-game.vercel.app",
+    host: "Vercel"
 },
 {
-    index: 6,
+    index: 16,
     project: "mini",
     title:"Calculator",
     stack: ["HTML", "CSS", "Javascript"],
     useage:"This is a clone of the Apple Calculator app",
-    desc: "This was a project to learn about working with multiple DOM elements and combinng their inputs using Javascript to produce a result.",
+    desc: "This was a project to learn about working with multiple DOM elements and combining their inputs using Javascript to produce a result.",
     challenges: "Differentiating between the different types of buttons was tricky as I needed to add Event Listeners according to whether the button was a number or symbol. I then needed the screen to reflect what was being input and update each time a stage of the calculation was input. I managed this by separating the button types into arrays with querySelectorAll to assign the Event Listeners and then keeping track of what the previous button to be pressed was. That allowed me to check whether another number/digit was being entered or a symbol meaning the next stage of the calculation was in progress.",
     learned: "Interacting with multiple DOM elements and receiving the values from these to a Javascript function in order to calculate a value.",
     githubLink: "https://github.com/mblenk/calculator-app",
     videoLink:"https://youtu.be/G97Dqs3yP0A",
     imageLink:"/calculator.png",
-    url:"https://calculator-app-eight-gamma.vercel.app"
+    url:"https://calculator-app-eight-gamma.vercel.app",
+    host: "Vercel"
 },
 {
-    index: 7,
+    index: 17,
     project: "mini",
     title:"Wordle",
     stack: ["HTML", "CSS", "Javascript", "React"],
     useage:"This is a clone of the Wordle game.",
     desc: "This was a project to learn about using React and understanding Components and State.",
-    challenges: "In hindsight, React was probably not the best way to create a clone of this game as it involved a lot of state passing between components. Vanilla JS would probably be much simpler to use for this but it was a valuable learning experience to use react for this sort of functionality. It took me a lot of trial and error to understand implementing custom classes depending on whether the letters were correct but in the wrong place or correct and in the right place but I was able to solve this with conditional classes based on an array containing that cell's reference.",
+    challenges: "In hindsight, React was probably not the best way to create a clone of this game as it involved a lot of state passing between components. Vanilla JS would probably be much simpler to use for this but it was a valuable learning experience to use React for this sort of functionality. It took me a lot of trial and error to understand implementing custom classes depending on whether the letters were correct but in the wrong place or correct and in the right place but I was able to solve this with conditional classes based on an array containing that cell's reference.",
     learned: "Using React and creating state within components before passing this as props to other components.",
     githubLink: "https://github.com/mblenk/wordle-clone",
     videoLink:"https://youtu.be/siZ-paJ-DDc",
     imageLink:"/wordle-clone.png"
 },
 {
-    index: 8,
+    index: 1,
     project: "full",
     title:"Fantasy Football Statistics",
     stack: ["HTML", "CSS", "Javascript", "React", "NodeJS", "Express", "MongoDB", "JWT Auth", "Tailwind"],
     useage:"A web application for calculating and displaying statistics for a Fantasy Football Draft League",
-    desc: "",
-    challenges: "",
-    learned: "",
-    githubLink: "https://github.com/mblenk/fantasy-football-app",
-    videoLink:"",
-    imageLink:"",
-    url: ""
+    desc: "This is a MERN stack app designed to interact with the third-party Fantasy Premier League API to extract data and then use this to calculate statistics for a Fantasy Football Draft league. Initially this a bespoke version that uses the data for just one league that I take part in. I am working on expanding this to be applicable to any league so that anyone can track their league's stats in the same way.",
+    challenges: "Having already created a MERN stack app with JWT auth I was able to re-use a lot of the functionality for logging in/logging out. The main challenges were in creating backend functionality that would receive requests from my Frontend and then send the applicable requests to the third-party API before then handling that data. There are multiple endpoints offered by the FPL API and the data is not in a format that could be easily displayed in a Front End. I had to create multiple functions to handle this data and reconfigure it to a format that could be posted to by database and also sent to the React app to display. The biggest challenge came in hosting the application. Initially I hosted the backend through AWS Elastic Beanstalk. I created an instance with a working code pipeline and had the required certificates attached to my Load Balancer to enable HTTPS connections. Unfortunately, the FPL API kept blocking requests from my server (403 Forbidden). It seemed that their rate-limiting software was rejecting my backend once hosted, even though the local version worked perfectly. I couldn't seem to work out why this was happening so I eventually decided to try another hosting platform to see if it was an issue with the way it was hosted on AWS. I tried DigitalOcean and it worked perfectly, receiving requests from the frontend and communicating perfectly with the FPL API with no 403 errors. ",
+    learned: "How to host with AWS, DigitalOcean and how to integrate a third-party API into an application.",
+    githubLink: "https://github.com/mblenk/fantasy-draft-backend/",
+    videoLink:"https://youtu.be/q4cP1ln39fo",
+    imageLink:"/ff-draft.png",
+    url: "https://www.solschfantasydraft.co.uk",
+    host: "DigitalOcean and Vercel"
+},
+{
+    index: 19,
+    project: "mini",
+    title:"Parallax",
+    stack: ["HTML", "CSS", "Javascript", "React"],
+    useage:"This is a parallax scrolling effect using 5 layers of images",
+    desc: "This was a project to further my CSS and design skills. I had seen some interesting parallax concepts and wanted to try and replicate my own effect. I layered 4 images over a div tag which transitioned from light blue (for the sky) to dark blue (for the water). I then set the z-indexes to create the parallax effect as well as adding an intersection observer to turn the background div black once the content began to appear and to hide the images as well.",
+    challenges: "Developing the parallax effect was very difficult as there were 5 layers to align in both 2D and 3D. I had decided that when transitioning from the parallax to the site content I didn't just want to match the site content scroll speed to the slowest parallax layer. Although this would have made for a much smoother transition, the scroll speed of the content would've been very slow and I wanted the page to be slick once into the main content. This was tricky to achieve but through learning more about transitions and Intersection Observers I could achieve the desired effect.",
+    learned: "Using more advanced CSS concepts such as the Parallax effect.",
+    githubLink: "https://github.com/mblenk/parallax",
+    videoLink:"https://youtu.be/M-0Ks1J0Ya4",
+    imageLink:"/parallax.png",
+    url: "https://parallax-pb5b.vercel.app/",
+    host: "Vercel"
 }]

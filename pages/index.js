@@ -31,24 +31,24 @@ export default function Home() {
         <title>Matt Blenkinsop - Developer Portfolio</title>
         <meta name="description" content="I am a self-taught javascript developer skilled in creating full-stack web applications." />
       </Head>
-      <main className="relative bg-black text-white tracking-wide">
-        <Navbar activeSlide={activeSlide} />
-        <div className="h-screen w-screen overflow-y-auto overflow-x-hidden perspective scroll-smooth">
+      <main className="relative bg-background text-secondary tracking-wide font-['Raleway']">
+        <div className="h-screen w-screen overflow-y-auto overflow-x-hidden scroll-smooth">
+          <Navbar activeSlide={activeSlide} />
           <About /> 
           <Projects setActiveSlide={setActiveSlide} />
           <Contact />
         </div>
         <div className="bg-black fixed top-0 left-0 h-full w-full flex justify-center items-center" ref={intro}>
-              <div className="text-green-500 p-10">
-                <h1 className="bg-black overflow-hidden text-center">
-                  <span className="text translate-y-full inline-block text-7xl" ref={text1}>Matt Blenkinsop</span>
-                </h1>
-                <h1 className="bg-black overflow-hidden text-center">
-                  <span className="text translate-y-full inline-block text-5xl" ref={text2}>Web Developer</span>
-                </h1>
-              </div>
-            </div>
-            <div className="bg-green-500 fixed top-0 left-0 w-full h-full translate-y-full" ref={slider}></div>
+          <div className="text-neon p-10">
+            <h1 className="bg-black overflow-hidden text-center">
+              <span className="text translate-y-full inline-block text-7xl" ref={text1}>Matt Blenkinsop</span>
+            </h1>
+            <h1 className="bg-black overflow-hidden text-center">
+              <span className="text translate-y-full inline-block text-4xl" ref={text2}>Full-Stack Developer</span>
+            </h1>
+          </div>
+        </div>
+        <div className="bg-neon fixed top-0 left-0 w-full h-full translate-y-full" ref={slider}></div>
         { activeSlide && <ProjectModal setActiveSlide={setActiveSlide} number={activeSlide} data={projectData} /> }      
       </main>
     </>

@@ -4,15 +4,19 @@ export default function Biography() {
     const [longText, setLongText] = useState(false)
 
   return (
-    <div className='flex flex-col mt-12 lg:mt-0 lg:w-1/2'>
-        <div className="relative">
-            <img src="/me.jpeg" alt="Profile Image" className="relative rounded-full w-full object-cover border-green-500 border-4 hover:z-20 "/>
-            <div className='flex my-4 gap-4 justify-center -z-10'>
-                <button className='bg-green-500 text-white p-3 rounded-xl text-center cursor-pointer drop-shadow-lg transition ease-in hover:bg-white hover:text-green-500 duration-100 font-semibold' onClick={() => setLongText(false)}>Short version</button>
-                <button className='bg-green-500 text-white p-3 rounded-xl text-center cursor-pointer drop-shadow-lg transition ease-in hover:bg-white hover:text-green-500 duration-100 font-semibold' onClick={() => setLongText(true)}>Long version</button>
-            </div>
+    <div className='flex flex-col lg:w-1/2'>
+        <h1 className="text-neon text-3xl md:text-6xl font-bold mt-4">Hi, I&apos;m Matt 👋</h1>
+        <br />
+        <p className="text-secondary md:text-xl">I am a self-taught Javascript developer able to create Full-Stack web applications. I have a passion for coding and am always trying to learn and expand my skillset. Check out my projects below to see my skills and what I can offer!</p>
+        <br />
+        <div className="relative my-4">
+            <img src="/me2.jpg" alt="Profile Image" className="relative rounded-full w-full object-cover border-neon border-4 hover:z-20 neon"/>
+            {/* <div className='flex my-8 gap-4 justify-center -z-10'>
+                <button className='bg-neon text-secondary p-3 rounded-xl text-center cursor-pointer drop-shadow-lg transition ease-in hover:bg-secondary hover:text-neon duration-100 font-semibold' onClick={() => setLongText(false)}>Short version</button>
+                <button className='bg-neon text-secondary p-3 rounded-xl text-center cursor-pointer drop-shadow-lg transition ease-in hover:bg-secondary hover:text-neon duration-100 font-semibold' onClick={() => setLongText(true)}>Long version</button>
+            </div> */}
         </div>
-        <div className="h-1/2 lg:max-h-[18rem] p-2 lg:overflow-auto "> 
+        {/* <div className="h-1/2 lg:max-h-[18rem] p-2 lg:overflow-auto "> 
             <div className="">
                 { !longText && <p className="animate-fadein">So you want the short story? Well I was first introduced to coding at the end of 2021 and was immediately hooked. I made the decision to quit my job as a Global Buyer and teach myself to code. I started with the basics of HTML, CSS and Javascript and then began experimenting with different projects, experiencing equal amounts of satisfation and frustration along the way! <br /><br/>In my spare time I like to keep active and am keen on rock climbing, running, squash and golf. I&apos;m based in Nottingham in the UK which is very convenient for long walks in the Peak District.</p>}
 
@@ -29,11 +33,7 @@ export default function Biography() {
                 </>
                 }
             </div>
-        </div>
+        </div> */}
     </div>     
   )
 }
-
-// transition ease-in hover:scale-150 hover:-translate-x-20 hover:translate-y-20 hover:border-8 duration-150
-
-// lg:transition lg:ease-in lg:hover:scale-200 lg:hover:text-sm lg:hover:-translate-x-48 lg:hover:-translate-y-20 lg:hover:border-8 lg:hover:border-green-500 lg:hover:bg-black lg:hover:p-4 lg:hover:rounded-lg lg:duration-150

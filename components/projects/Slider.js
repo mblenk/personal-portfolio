@@ -2,9 +2,10 @@ import Carousel from 'better-react-carousel'
 import ProjectCard from './ProjectCard'
 
 export default function Slider({ setActiveSlide, data }) {
+  const sortDataByIndex = data.sort((a, b) => a.index - b.index) 
 
   return (
-    <div className="mt-12 relative">
+    <div className="mt-8 relative">
         <Carousel 
             cols={1} rows={1} gap={10} showDots={true} 
             dotColorActive={'rgb(34 197 94)'} loop 
@@ -13,7 +14,7 @@ export default function Slider({ setActiveSlide, data }) {
                 borderRadius: '10px'
             }}
         >
-          {data.map(item => (
+          {sortDataByIndex.map(item => (
             <Carousel.Item key={item.index}>
               <ProjectCard setActiveSlide={setActiveSlide} index={item.index} image={item.imageLink} />
             </Carousel.Item>
@@ -24,16 +25,5 @@ export default function Slider({ setActiveSlide, data }) {
   )
 }
 
-/* <Carousel.Item>
-                <ProjectCard setActiveSlide={setActiveSlide} index={1} image={"/golf-hcap-calc.png"} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <ProjectCard setActiveSlide={setActiveSlide} index={2} image={"/portfolio-page.png"} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <ProjectCard setActiveSlide={setActiveSlide} index={3} image={"/toil-tracker.png"} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <ProjectCard setActiveSlide={setActiveSlide} index={4} image={"/golf-stats.png"} />
-            </Carousel.Item> */
+
 

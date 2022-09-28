@@ -1,7 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .neon-button 
+  {
+    position:relative;
+    display:inline-block;
+    padding: 5px 10px;
+    color: #59FF5A;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    text-decoration: none;
+    font-size: 2.5vh;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 15px;
+  }
+  .neon-button:hover
+  {
+    color: #374151;
+    background: #59FF5A;
+    box-shadow: 0 0 10px #59FF5A, 0 0 20px #59FF5A, 0 0 40px #59FF5A;
+  }
+  .neon-button-sm
+  {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0.8vh 1.2vh;
+    color: #59FF5A;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    text-decoration: none;
+    font-size: 2vh;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align:center;
+  }
+  .neon
+  {
+    box-shadow: 0 0 10px #59FF5A, 0 0 20px #59FF5A, 0 0 40px #59FF5A;
+  }
+  .neon-lg
+  {
+    box-shadow: 0 0 20px #59FF5A, 0 0 40px #59FF5A, 0 0 80px #59FF5A;
+  }
+  .general-btn
+  {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1vh;
+    background:#59FF5A;
+    padding: 3vh 6vh;
+    border-radius: 2vh;
+    color: #374151;
+    font-size: 2.5vh;
+    text-align:center;
+  }
+  .general-btn:hover 
+  {
+    box-shadow: 0 0 10px #59FF5A, 0 0 20px #59FF5A, 0 0 40px #59FF5A;
+  }
+  .general-btn-sm
+  {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1vh;
+    background:#59FF5A;
+    padding: 1vh 2vh;
+    border-radius: 2vh;
+    color: #374151;
+    font-size: 2.5vh;
+    text-align:center;
+  }
+}
 
   @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');

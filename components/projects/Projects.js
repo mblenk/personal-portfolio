@@ -41,10 +41,10 @@ export default function Projects({ setActiveSlide }) {
   // }, [onScreen])
 
   return (
-    <div className="bg-black relative overflow-y-auto overflow-x-hidden py-24 border-t-8 border-t-green-500" id="projects">
+    <div className="relative overflow-y-auto overflow-x-hidden py-6 md:py-12" id="projects">
       <div className="w-5/6 lg:w-3/4 mx-auto">
-        <h1 className="text-green-500 text-6xl underline mt-10 flex font-bold">Projects</h1>
-        {/* { onScreen && <h1 className="text-green-500 text-6xl underline mt-10 flex font-bold">
+        <h1 className="text-neon text-4xl md:text-6xl underline flex font-bold">Projects</h1>
+        {/* { onScreen && <h1 className="text-neon text-6xl underline mt-10 flex font-bold">
           <span className="-translate-x-120 opacity-0" ref={p}>P</span>
           <span className="-translate-x-120 opacity-0" ref={r}>r</span>
           <span className="-translate-x-120 opacity-0" ref={o}>o</span>
@@ -55,14 +55,15 @@ export default function Projects({ setActiveSlide }) {
           <span className="-translate-x-120 opacity-0" ref={s}>s</span>
         </h1>} */}
         <br />
-        <h3 className="text-xl">Here are some examples of recent projects I&apos;ve created using different tech stacks. The code for all of these apps is available on GitHub if you wish to view the source code behind them.</h3>
+        <h3 className="md:text-xl">Here are some examples of recent projects I&apos;ve created using different tech stacks. The code for all of these apps is available on GitHub if you wish to view the source code behind them.</h3>
         <br />
-        <h4 className="text-xl text-center">Click the images below to learn more...</h4>
-        <h1 className="text-green-500 text-3xl underline mt-10 flex font-bold">Main Projects</h1>
+        <h4 className="md:text-xl text-center">Click the images in the sliders below to learn more...</h4>
+        <h1 className="text-neon text-3xl underline mt-10 flex font-bold">Main Projects</h1>
         <Slider setActiveSlide={setActiveSlide} data={fullProjects} />
         <br />
         <br />
-        <h1 className="text-green-500 text-3xl underline mt-10 flex font-bold" id="side-projects">Side Projects</h1>
+        <br />
+        <h1 className="text-neon text-3xl underline flex font-bold" id="side-projects">Side Projects</h1>
         <Slider setActiveSlide={setActiveSlide} data={miniProjects} />
       </div>
     </div>
