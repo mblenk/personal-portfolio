@@ -18,7 +18,7 @@ module.exports = {
         '200': '2.00'
       },
       fontFamily: {
-        'sans': ['Raleway']
+        // 'sans': ['Raleway']
         // lato: ['"Lato"', ...defaultTheme.fontFamily.sans],
         // raleway: ['Raleway, sans-serif;'],
         // roboto: ['Roboto, sans-serif;'],
