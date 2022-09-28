@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import ReactPlayer from 'react-player'
 import ProjectDetail from './ProjectDetail'
-import TechStack from './techStack'
+import TechStack from './TechStack'
 
 export default function ProjectModal({ number, setActiveSlide, data }) {
   const modalData = data.find(project => project.index === number)
