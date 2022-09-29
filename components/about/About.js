@@ -11,11 +11,11 @@ export default function About() {
               {/* <p className="text-secondary md:text-xl mb-8">My skills include:</p> */}
               <div className="grid grid-cols-3 mt-4 lg:w-5/6 bg-neon neon mb-4">
                 <SkillCard image={"/html-1.svg"} title={"HTML"} colour={"bg-green-500"}/>
-                <SkillCard image={"/css-3.svg"} title={"CSS"} colour={"bg-blue-500"}/>
+                <SkillCard image={"/css-3.svg"} title={"CSS/Tailwind"} colour={"bg-blue-500"}/>
                 <SkillCard image={"/javascript-1.svg"} title={"Javascript"} colour={"bg-red-500"}/>
                 <SkillCard image={"/react-2.svg"} title={"ReactJS"} colour={"bg-orange-500"}/>
                 <SkillCard image={"/nextjs-2.svg"} title={"NextJS"} colour={"bg-pink-500"}/>
-                <SkillCard image={"/tailwindcss.svg"} title={"Tailwind"} colour={"bg-yellow-500"}/>
+                <SkillCard image={"/typescript.svg"} title={"Typescript"} colour={"bg-yellow-500"}/>
                 <SkillCard image={"/node-js-white.svg"} title={"NodeJS"} colour={"bg-purple-500"}/>
                 <SkillCard image={"/mongodb-icon-1.svg"} title={"MongoDB"} colour={"bg-teal-500"}/>
                 <SkillCard image={"/firebase-1.svg"} title={"Firebase"} colour={"bg-cyan-500"}/>
