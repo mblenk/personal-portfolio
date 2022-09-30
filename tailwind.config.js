@@ -12,7 +12,7 @@ module.exports = {
         'secondary': 'rgb(255, 255, 255)',
         'tertiary': '#FFFF03',
         'neon': '#59FF5A', 
-        'background': '#374151'
+        'background': '#2B323E'
       },
       scale: {
         '200': '2.00'

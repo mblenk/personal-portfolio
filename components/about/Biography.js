@@ -5,7 +5,7 @@ export default function Biography() {
 
   return (
     <div className='flex flex-col lg:w-1/2'>
-        <h1 className="text-neon text-3xl md:text-6xl font-bold mt-4">Hi, I&apos;m Matt 👋</h1>
+        <h1 className="neon-flash-text text-3xl md:text-6xl font-bold mt-4">Hi, I&apos;m Matt 👋</h1>
         <br />
         <p className="text-secondary md:text-xl">I am a self-taught Javascript developer able to create Full-Stack web applications. I have a passion for coding and am always trying to learn and expand my skillset. Check out my projects below to see my skills and what I can offer!</p>
         <br />

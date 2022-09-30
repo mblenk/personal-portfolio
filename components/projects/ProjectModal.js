@@ -16,7 +16,7 @@ export default function ProjectModal({ number, setActiveSlide, data }) {
 
   return (
         <div className={`fixed top-0 left-0 z-10 w-full h-full bg-black/70 animate-fadein ${ fadeOut ? "animate-fadeout" : "animate-fadein" }`} onClick={handleClick}>
-            <div className="bg-background lg:my-12 mx-auto p-4 w-11/12 h-full lg:w-5/6 lg:h-5/6 rounded-xl relative lg:flex lg:gap-4 overflow-y-auto overflow-x-hidden border-neon neon border-8">
+            <div className="bg-background lg:my-12 mx-auto p-4 w-11/12 h-full lg:w-5/6 lg:h-5/6 rounded-xl relative lg:flex lg:gap-4 overflow-y-auto overflow-x-hidden border-secondary neon border-8">
                 <div className="lg:w-3/5 flex flex-col gap-2 p-1">
                   <ProjectDetail data={modalData} />
                 </div>
