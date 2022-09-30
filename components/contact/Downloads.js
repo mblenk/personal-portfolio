@@ -4,7 +4,7 @@ export default function Downloads() {
   return (
     <div className='lg:w-1/3 flex flex-col items-center gap-8 lg:pl-10 lg:border-l-2 lg:border-l-neon pb-10'>
         <h2 className='text-2xl md:text-3xl neon-flash-text font-semibold underline'>Links/downloads:</h2>
-        <a href="/dummy.pdf" target="_blank" rel="noreferrer" className='w-full general-btn-sm md:general-btn'>
+        <a href="/CV-Matt-Blenkinsop.pdf" target="_blank" rel="noreferrer" className='w-full general-btn-sm md:general-btn'>
             <img src="/download.png" alt="" className='h-10 '/>
             <span className='font-semibold'>Download CV</span>
         </a>
