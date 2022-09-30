@@ -11,12 +11,18 @@ export default function Biography() {
         <br />
         <div className="relative my-4">
             <img src="/me2.jpg" alt="Profile Image" className="relative rounded-full w-full object-cover border-neon border-4 hover:z-20 neon"/>
-            {/* <div className='flex my-8 gap-4 justify-center -z-10'>
+        </div>
+    </div>     
+  )
+}
+
+
+{/* <div className='flex my-8 gap-4 justify-center -z-10'>
                 <button className='bg-neon text-secondary p-3 rounded-xl text-center cursor-pointer drop-shadow-lg transition ease-in hover:bg-secondary hover:text-neon duration-100 font-semibold' onClick={() => setLongText(false)}>Short version</button>
                 <button className='bg-neon text-secondary p-3 rounded-xl text-center cursor-pointer drop-shadow-lg transition ease-in hover:bg-secondary hover:text-neon duration-100 font-semibold' onClick={() => setLongText(true)}>Long version</button>
             </div> */}
-        </div>
-        {/* <div className="h-1/2 lg:max-h-[18rem] p-2 lg:overflow-auto "> 
+
+               {/* <div className="h-1/2 lg:max-h-[18rem] p-2 lg:overflow-auto "> 
             <div className="">
                 { !longText && <p className="animate-fadein">So you want the short story? Well I was first introduced to coding at the end of 2021 and was immediately hooked. I made the decision to quit my job as a Global Buyer and teach myself to code. I started with the basics of HTML, CSS and Javascript and then began experimenting with different projects, experiencing equal amounts of satisfation and frustration along the way! <br /><br/>In my spare time I like to keep active and am keen on rock climbing, running, squash and golf. I&apos;m based in Nottingham in the UK which is very convenient for long walks in the Peak District.</p>}
 
@@ -34,6 +40,3 @@ export default function Biography() {
                 }
             </div>
         </div> */}
-    </div>     
-  )
-}

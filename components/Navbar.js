@@ -7,7 +7,6 @@ export default function Navbar({ activeSlide }) {
 
   return (    
       <nav className="z-10 w-5/6 mx-auto p-4 flex justify-center md:justify-end">
-        {/* <h2 className='text-4xl hidden md:block'>Matt Blenkinsop</h2> */}
         <div className="md:mr-10 flex gap-4 text-secondary">
           <Link href='#about'>
             <a className='neon-button-sm md:neon-button'>About Me</a>

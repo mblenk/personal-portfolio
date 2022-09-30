@@ -5,11 +5,52 @@ import { projectData } from '../../data/projectData'
 
 
 export default function Projects({ setActiveSlide }) {
-  // const [onScreen, setOnScreen] = useState(false)
   const fullProjects = projectData.filter(item => item.project === "full")
   const miniProjects = projectData.filter(item => item.project === "mini")
 
-  // const showTitle = useRef()
+  return (
+    <div className="relative overflow-y-auto overflow-x-hidden py-6 md:py-12" id="projects">
+      <div className="w-5/6 lg:w-3/4 mx-auto">
+        <h1 className="neon-flash-text text-4xl md:text-6xl underline flex font-bold">Projects</h1>
+        <br />
+        <h3 className="md:text-xl">Here are some examples of recent projects I&apos;ve created using different tech stacks. The code for all of these apps is available on GitHub if you wish to view the source code behind them.</h3>
+        <br />
+        <h4 className="md:text-xl text-center">Click the images in the sliders below to learn more...</h4>
+        <h1 className="neon-flash-text text-3xl underline mt-10 flex font-bold">Main Projects</h1>
+        <Slider setActiveSlide={setActiveSlide} data={fullProjects} />
+        <br />
+        <br />
+        <br />
+        <h1 className="neon-flash-text text-3xl underline flex font-bold" id="side-projects">Side Projects</h1>
+        <Slider setActiveSlide={setActiveSlide} data={miniProjects} />
+      </div>
+    </div>
+  )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // const [onScreen, setOnScreen] = useState(false)
+
+
+ // const showTitle = useRef()
   // const p = useRef()
   // const r = useRef()
   // const o = useRef()
@@ -40,11 +81,7 @@ export default function Projects({ setActiveSlide }) {
   //     tl.to(s.current, { x: "0%", opacity:1, duration: 0.05 })
   // }, [onScreen])
 
-  return (
-    <div className="relative overflow-y-auto overflow-x-hidden py-6 md:py-12" id="projects">
-      <div className="w-5/6 lg:w-3/4 mx-auto">
-        <h1 className="neon-flash-text text-4xl md:text-6xl underline flex font-bold">Projects</h1>
-        {/* { onScreen && <h1 className="text-neon text-6xl underline mt-10 flex font-bold">
+    {/* { onScreen && <h1 className="text-neon text-6xl underline mt-10 flex font-bold">
           <span className="-translate-x-120 opacity-0" ref={p}>P</span>
           <span className="-translate-x-120 opacity-0" ref={r}>r</span>
           <span className="-translate-x-120 opacity-0" ref={o}>o</span>
@@ -54,18 +91,3 @@ export default function Projects({ setActiveSlide }) {
           <span className="-translate-x-120 opacity-0" ref={t}>t</span>
           <span className="-translate-x-120 opacity-0" ref={s}>s</span>
         </h1>} */}
-        <br />
-        <h3 className="md:text-xl">Here are some examples of recent projects I&apos;ve created using different tech stacks. The code for all of these apps is available on GitHub if you wish to view the source code behind them.</h3>
-        <br />
-        <h4 className="md:text-xl text-center">Click the images in the sliders below to learn more...</h4>
-        <h1 className="neon-flash-text text-3xl underline mt-10 flex font-bold">Main Projects</h1>
-        <Slider setActiveSlide={setActiveSlide} data={fullProjects} />
-        <br />
-        <br />
-        <br />
-        <h1 className="neon-flash-text text-3xl underline flex font-bold" id="side-projects">Side Projects</h1>
-        <Slider setActiveSlide={setActiveSlide} data={miniProjects} />
-      </div>
-    </div>
-  )
-}

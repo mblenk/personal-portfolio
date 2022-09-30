@@ -19,6 +19,3 @@ export default function Downloads() {
     </div>
   )
 }
-
-
-// bg-neon p-2 rounded-xl text-secondary text-center cursor-pointer drop-shadow-lg  transition ease-in hover:border-8 hover:rounded-full duration-100 w-2/3 h-20 flex gap-2 items-center justify-center
