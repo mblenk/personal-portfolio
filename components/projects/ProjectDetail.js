@@ -29,6 +29,7 @@ export default function ProjectDetail({ data, index }) {
     } catch(err) {
         console.log(err)
         setIsPending(false)
+        alert('There was an error creating the guest access token. Please try again later, or use the contact form to get in touch and an email access link can be provided.')
     }
     
 }
