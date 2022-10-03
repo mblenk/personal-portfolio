@@ -11,7 +11,7 @@ export default function GuestAccessModal({ setGuestAccessModal }) {
         e.preventDefault()
         setIsPending(true)
         try {
-            const res = await axios.post('http://localhost:5000/api/user/createguestuser', {
+            const res = await axios.post(`${process.env.GUEST_ACCESS}`, {
                 email
             },
             { 
@@ -32,7 +32,7 @@ export default function GuestAccessModal({ setGuestAccessModal }) {
 
   return (
     <div className={`fixed top-0 left-0 z-20 w-full h-full flex justify-center items-center bg-white/50 animate-fadein`} onClick={() => setGuestAccessModal(false)}>
-        <div className='bg-background rounded-xl w-11/12 h-3/4 lg:w-1/2 text-center p-6 relative' onClick={e => e.stopPropagation()}>
+        <div className='bg-background rounded-xl w-11/12 h-full lg:h-3/4 lg:w-1/2 text-center p-6 relative' onClick={e => e.stopPropagation()}>
             <h2 className='text-2xl underline mb-4'>Guest Access</h2>
             <p>This site is password protected. To access you will need an authorised access link. Please provide your email below and a link will be emailed to you. This email address will not be stored.</p>
             <p>Once your link has been emailed, your access will be valid for 30 minutes. Once your access has expired, you will need to request a new link in order to access the site again.</p>
