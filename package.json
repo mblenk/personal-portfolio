@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "axios": "^0.27.2",
     "better-react-carousel": "^1.1.1",
     "gsap": "^3.10.4",
     "next": "12.2.2",

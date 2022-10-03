@@ -41,7 +41,7 @@ export const projectData = [{
     videoLink:"https://youtu.be/BalHbmQYI5w",
     imageLink:"/golf-hcap-store.png",
     url: null,
-    host: "Not currently hosted"
+    host: null
 },
 {
     index: 5,
@@ -56,7 +56,7 @@ export const projectData = [{
     videoLink:null,
     imageLink: "/portfolio.png",
     url: "/",
-    host: "Vercel"
+    host: null
 },
 {
     index: 15,
@@ -113,8 +113,9 @@ export const projectData = [{
     githubLink: "https://github.com/mblenk/fantasy-draft-backend/",
     videoLink:"https://youtu.be/q4cP1ln39fo",
     imageLink:"/ff-draft.png",
-    url: "https://www.solschfantasydraft.co.uk",
-    host: "DigitalOcean and Vercel"
+    url: `${process.env.GUEST_ACCESS}`,
+    host: "DigitalOcean and Vercel",
+    guest_access: true
 },
 {
     index: 19,
