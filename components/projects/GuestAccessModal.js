@@ -51,7 +51,7 @@ export default function GuestAccessModal({ setGuestAccessModal }) {
                 { !isPending && !accessSent && <button className='general-btn-sm mx-auto' type='submit'>Request Access</button>}
                 { isPending && !accessSent && <button className='general-btn-sm mx-auto' disabled>Requesting...</button>}
                 { !isPending && accessSent && <button className='general-btn-sm mx-auto' disabled>Access sent!</button>}
-                { !isPending && accessSent && <p className='mt-4'>Access request successful. Please check your inbox for your link. If you can't find the email, please check your junk folder.</p>}
+                { !isPending && accessSent && <p className='mt-4'>Access request successful. Please check your inbox for your link. If you can&apos;t find the email, please check your junk folder.</p>}
                 { error && <p className='mt-4'>{error}</p>}
             </form>
             <button className="absolute top-2 right-2" onClick={() => setGuestAccessModal(false)}>
