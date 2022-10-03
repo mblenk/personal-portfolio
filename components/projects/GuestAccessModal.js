@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import e from 'cors'
 
 export default function GuestAccessModal({ setGuestAccessModal }) {
     const [email, setEmail] = useState('')
