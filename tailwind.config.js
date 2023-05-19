@@ -31,7 +31,7 @@ module.exports = {
       keyframes: {
         fadein: {
           '0%': { transform: 'translate3D(24rem)', opacity:'0' },
-          '100%': { transform: 'translate3D(0rem)', opactiy:'1' }
+          '100%': { transform: 'translate3D(0rem)', opacity:'1' }
         },
         fadeout: {
           '0%': { transform: 'translate3D(0rem)', opacity: '1' },
